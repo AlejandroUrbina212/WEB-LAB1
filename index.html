@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
     <title>Ejemplo</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
   <body>
     <!-- <h1>lo que <a class="bailarin" href="https://google.com">mi link metiche</a> sea</h1>
@@ -30,12 +32,12 @@
       </div>
       <div class="header__right">
         <div class="header__password">
-          <img src="./lock.PNG" alt="lock">
+          <i class="material-icons secondary">lock</i>
           <h2>CONTRASEÑAS</h2>
         </div>
         <div class="header__name">
           <h2>Luis Urbina</h2>
-          <img src="./down_arrow.PNG" alt="down arrow">
+          <i class="material-icons secondary">expand_more</i>
         </div>
       </div>
     </div>
@@ -64,26 +66,104 @@
             </button>
           </div>
         </div>
+      
+      
+      
+      </div>
+      <div class="book__view">
+        <div class="book__view__up">
+          <div class="book__view__left">
+            <p class="main__title">Primero Básico</p>
+            <i class="material-icons secondary">create</i>
+            <i class="material-icons secondary">delete</i>
+          </div>
+          <div class="book__view__right">
+            <button class="button button--secondary">AGREGAR LIBRO</button>
+            <button class="button button--primary">AGREGAR CATEGORÍA</button>
+          </div>
+        </div>
+        <div class="book__view__middle">
+          <div class="book__view__slice">
+            <p>Idioma Inglés</p>
+            <i class="material-icons secondary">delete</i>
+          </div>
+          <div class="book__view__slice secondary">
+            <p>Idioma Español</p>
+            <i class="material-icons secondary">delete</i>
+          </div>
+        </div>
+        <div class="book__view__bottom">
+          <div class="book">
+            <div class="book__image" style="background-image: url(https://upload.wikimedia.org/wikipedia/en/0/05/Littleprince.JPG)" ></div>
+            <div class="book__footer">
+              <div class="book__meta">
+                <div class="book__title">
+                  El principito
+                </div>
+                <div class="book__size">
+                  15mb
+                </div>
+              </div>
+              <div class="book__actions">
+                <button class="book__more"></button>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book__image" style="background-image: url(https://image.slidesharecdn.com/serway-1-150418210644-conversion-gate02/95/fsica-serway-1-638.jpg?cb=1429391321)" ></div>
+            <div class="book__footer">
+              <div class="book__meta">
+                <div class="book__title">
+                  Física de Serway
+                </div>
+                <div class="book__size">
+                  15mb
+                </div>
+              </div>
+              <div class="book__actions">
+                <button class="book__more"></button>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book__image" style="background-image: url(data:image/jpeg;base64,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)" ></div>
+            <div class="book__footer">
+              <div class="book__meta">
+                <div class="book__title">
+                  El principito
+                </div>
+                <div class="book__size">
+                  15mb
+                </div>
+              </div>
+              <div class="book__actions">
+                <button class="book__more"></button>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book__image" style="background-image: url(http://statics.convergencia.trevenque.es/portadas/Originales/PUBLIDISA_3/PUB0190599.jpg)" ></div>
+            <div class="book__footer">
+              <div class="book__meta">
+                <div class="book__title">
+                  El principito
+                </div>
+                <div class="book__size">
+                  15mb
+                </div>
+              </div>
+              <div class="book__actions">
+                <button class="book__more"></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
     
 
-    <!-- <div class="book">
-      <div class="book__image" style="background-image: url(https://upload.wikimedia.org/wikipedia/en/0/05/Littleprince.JPG)" ></div>
-      <div class="book__footer">
-        <div class="book__meta">
-          <div class="book__title">
-            El principito
-          </div>
-          <div class="book__size">
-            15mb
-          </div>
-        </div>
-        <div class="book__actions">
-          <button class="book__more"></button>
-        </div>
-      </div>
-    </div> -->
+    
 
   </body>
 </html>
